@@ -1,3 +1,5 @@
-exports.getHome = async (req, res, next) => {
-    
+exports.getHome = (req, res) => {
+    res.status(200).render('portfolio', {
+        title: 'Falence Lemungoh'
+    })
 }
