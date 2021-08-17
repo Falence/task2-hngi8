@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.13.7",
     "nodemailer": "^6.6.3",
+    "pug": "^3.0.2",
     "validator": "^13.6.0"
   }
 }
