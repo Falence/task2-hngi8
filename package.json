@@ -1,0 +1,22 @@
+{
+  "name": "task2-hngi8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Falence/task2-hngi8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Falence/task2-hngi8/issues"
+  },
+  "homepage": "https://github.com/Falence/task2-hngi8#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
