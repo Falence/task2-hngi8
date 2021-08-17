@@ -1,0 +1,8 @@
+** Write a program that prints your name
+** Build an interactive resume page that contains a form.
+** Host it on Heroku
+
+STEPS
+- Render a resume pug template
+- Receive input from the form
+- Send input details to my mail
