@@ -1,23 +1,22 @@
-doctype html
-html
-    head
-        block head
-            meta(charset='UTF-8')
-            meta(name='viewport' content='width=device-width, initial-scale=1.0')
-            link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,700' rel='stylesheet')
-            link(rel='stylesheet' href='/css/style.css')
-            link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
-            title Natours | #{title}
+extends base
+
+block content 
+    section.section-header
+        .header__hero
+            .header__hero-overlay &nbsp;
+            img.header__hero-img(src=`/img/work.jpg`, alt=`cover`)
+
+        .heading-box
+            .heading-box__group
+                .heading-box__detail
+                    span.heading-box__text= `Hello. I am....`
+            h1.heading-primary
+                span= `Falence Lemungoh`
+            .heading-box__group
+                .heading-box__detail
+                    svg.heading-box__icon
+                        use(xlink:href='/img/icons.svg#icon-box')
+                    span.heading-box__text= `Backend Engineer`
     
-    body
-        // HEADER
-        include _header
-        
-        // CONTENT
-        block content
-            h1 This is a placeholder heading
 
-        // FOOTER
-        include _footer
-
-        //- script(src='/js/login.js')
+                
