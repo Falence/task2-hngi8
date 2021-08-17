@@ -3,7 +3,7 @@ const dotenv = require('dotenv')
 dotenv.config({ path: './.env' })
 
 const app = require('./app')
-console.log(process.env.DATABASE_URL)
+
 mongoose
     .connect(process.env.DATABASE_LOCAL, {
         useNewUrlParser: true,

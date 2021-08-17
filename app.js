@@ -1,16 +1,11 @@
 const express = require('express')
+const viewRouter = require('./routes/viewRoutes')
+const contactRouter = require('./routes/contactRoutes')
 
 const app = express()
 app.use(express.json())
 
-app.post('/', (req, res, next) => {
-    const { name, email, message } = req.body
-
-    console.log({name, email, message})
-    res.status(200).json({
-        statsu: 'success',
-        message: "Form submitted"
-    })
-})
+app.use('/', viewRouter)
+app.use('/api/contacts', contactRouter)
 
 module.exports = app
