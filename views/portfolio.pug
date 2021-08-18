@@ -16,50 +16,87 @@ block content
                 .heading-box__detail
                     svg.heading-box__icon
                         use(xlink:href='/img/icons.svg#icon-box')
-                    span.heading-box__text= `Backend Engineer`
+                    span.heading-box__text= `Backend Engineer     |     NodeJS (JavaScript)`
     
-    main.main
-        .card-container
+    //- main.main
+    section.section-description
+        .description-box
+            h2.heading-modified Mar 2021 - Jun 2021
+            <br>
+            h2.heading-modified.ma-bt-mod Zuri, Nigeria
+            <br>
+            h2.heading-secondary.ma-bt-md Zuri training - Backend Developer
+            p.description__text Basic introduction to software development and design aimed at complete beginners which anyone can join. 
+            p.description__text I enrolled in the backend development track and made it to the end, participating in the project phase. 
+        
+        .description-box
+            h2.heading-modified Aug 2020 - feb 2021
+            <br>
+            h2.heading-modified.ma-bt-mod flexgroup sarl, cameroon
+            <br>
+            h2.heading-secondary.ma-bt-md software Engineer intern
+            p.description__text Built web and mobile applications for clients and company projects using the latest tools and technologies. 
+            p.description__text Worked on the vendor back-office of an eCommerce application that allows customers and vendors to chat and negotiate prices. 
+        
+    section.section-description
+        .description-box
+            h2.heading-modified June 2020 - Aug 2020
+            <br>
+            h2.heading-modified.ma-bt-mod Google Africa Training
+            <br>
+            h2.heading-secondary.ma-bt-md Mobile Web Specialist
+            p.description__text One of 30000 developers supported by the Andela Learning Community to upskill on important Google technologies 
+            p.description__text Enrolled in the Mobile Web Specialist track and got web development training. Learnt and built a few projects with NodeJs on the backend and Angular on the frontend. 
+        
+        .description-box
+            h2.heading-modified Nov 2017 - Jul 2021
+            <br>
+            h2.heading-modified.ma-bt-mod University of Buea, cameroon
+            <br>
+            h2.heading-secondary.ma-bt-md Computer Engineering Student
+            p.description__text Received a four-year training as a computer engineer from one of the best universities in cameroon. Studied engineering concepts and implemented reallife projects. 
+        
+    
 
-                
-                .card
-                    .card__header
-                        .card__picture
-                            .card__picture-overlay &nbsp;
-                            img.card__picture-img(src=`img/me.jpg`)
+        //- .card-container
+        //-         .card
+        //-             .card__header
+        //-                 .card__picture
+        //-                     .card__picture-overlay &nbsp;
+        //-                     img.card__picture-img(src=`img/me.jpg`)
                         
-                        h3.heading me
+        //-                 h3.heading me
                     
-                    .card__details
-                        h4.card__sub-heading= `-day tour`
-                        p.card__text summary 
-                        .card__data
-                            svg.card__icon
-                                use(xlink:href='img/icons.svg#icon-map-pin')
-                            span description
-                        .card__data
-                            svg.card__icon
-                                use(xlink:href='img/icons.svg#icon-calendar')
-                            span startDates)
-                        .card__data
-                            svg.card__icon
-                                use(xlink:href='img/icons.svg#icon-flag')
-                            span= ` stops`
-                        .card__data
-                            svg.card__icon
-                                use(xlink:href='img/icons.svg#icon-user')
-                            span= ` people`
+        //-             .card__details
+        //-                 h4.card__sub-heading= `-day tour`
+        //-                 p.card__text summary 
+        //-                 .card__data
+        //-                     svg.card__icon
+        //-                         use(xlink:href='img/icons.svg#icon-map-pin')
+        //-                     span description
+        //-                 .card__data
+        //-                     svg.card__icon
+        //-                         use(xlink:href='img/icons.svg#icon-calendar')
+        //-                     span startDates)
+        //-                 .card__data
+        //-                     svg.card__icon
+        //-                         use(xlink:href='img/icons.svg#icon-flag')
+        //-                     span= ` stops`
+        //-                 .card__data
+        //-                     svg.card__icon
+        //-                         use(xlink:href='img/icons.svg#icon-user')
+        //-                     span= ` people`
 
-                    .card__footer
-                        p
-                            span.card__footer-value price
-                            | 
-                            span.card__footer-text per person
-                        p.card__ratings
-                            span.card__footer-value ratingsAverage
-                            | 
-                            span.card__footer-text= `rating `
-                        a.btn.btn--green.btn--small(href=`/tours/`) Details
+        //-             .card__footer
+        //-                 p
+        //-                     span.card__footer-value price
+        //-                     | 
+        //-                     span.card__footer-text per person
+        //-                 p.card__ratings
+        //-                     span.card__footer-value ratingsAverage
+        //-                     | 
+        //-                     span.card__footer-text= `rating `
+        //-                 a.btn.btn--green.btn--small(href=`/tours/`) Details
         <br>
         <br>
         <br>
@@ -73,6 +110,8 @@ block content
         <br>
         <br>
         <br>
+
+    main.main
         .login-form
                 h2.heading-secondary.ma-bt-lg You can kindly Contact me:
                 form.form
