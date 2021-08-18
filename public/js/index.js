@@ -8,7 +8,7 @@ const login = async (name, email, message) => {
   try {
     const res = await axios({
         method: 'POST',
-        url: 'http://127.0.0.1:5000/api/contacts/',
+        url: '/api/contacts/',
         data: {
             name,
             email,
@@ -35,7 +35,7 @@ if (loginForm)
         const name = document.getElementById('name').value
         const email = document.getElementById('email').value
         const message = document.getElementById('textarea').value
-        console.log({name, email, message})
+        // console.log({name, email, message})
         login(name, email, message)
     })
 

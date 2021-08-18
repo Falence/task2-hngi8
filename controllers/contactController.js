@@ -20,7 +20,7 @@ exports.createContact = async (req, res, next) => {
             message
         })
 
-        console.log({name, email, message})
+        // console.log({name, email, message})
         res.status(200).json({
             status: 'success',
             message: "Form submitted",
