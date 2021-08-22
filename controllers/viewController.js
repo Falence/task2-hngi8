@@ -1,5 +1,5 @@
 exports.getHome = (req, res) => {
-    res.status(200).render('portfolio', {
+    res.status(200).render('index', {
         title: 'Falence Lemungoh'
     })
 }

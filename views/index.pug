@@ -1,0 +1,382 @@
+doctype html
+
+
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Material Resume
+    link(rel='shortcut icon' type='image/png' href='/img/me.jpg')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='crossorigin')
+    link(rel='preload' as='style' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap' media='print' onload="this.media='all'")
+    noscript
+        link(rel='/stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap')
+    link(href='/css/font-awesome/css/all.min.css?ver=1.2.1' rel='stylesheet')
+    link(href='/css/mdb.min.css?ver=1.2.1' rel='stylesheet')
+    link(href='/css/aos.css?ver=1.2.1' rel='stylesheet')
+    link(href='/css/main.css?ver=1.2.1' rel='stylesheet')
+    noscript
+        style(type='text/css').
+            [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+            }
+header.d-print-none
+    .container.text-center.text-lg-left
+        .pt-4.clearfix
+            h1.site-title.mb-0 Falence Lemungoh
+            .site-nav
+                nav(role='navigation')
+                    ul.nav.justify-content-center
+                        li.nav-item
+                            a.nav-link(href='#about' title='About')
+                                span.menu-title About
+                        li.nav-item
+                            a.nav-link(href='#skills' title='Skills')
+                                span.menu-title Skills
+                        li.nav-item
+                            a.nav-link(href='#experience' title='Experience')
+                                span.menu-title Experience
+                        li.nav-item
+                            a.nav-link(href='#education' title='Education')
+                                span.menu-title Education
+                        li.nav-item
+                            a.nav-link(href='#portfolio' title='Portfolio')
+                                span.menu-title Portfolio
+                        li.nav-item
+                            a.nav-link(href='#contact' title='Contact')
+                                span.menu-title Contact
+.page-content
+    .container
+        .resume-container
+            #intro.shadow-1-strong.bg-white.my-5
+                .bg-info.text-white
+                    .cover.bg-image
+                        img(src='/images/header-background.jpg')
+                        .mask(style='background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);')
+                            .text-center.p-5
+                                .avatar.p-1
+                                    img.img-thumbnail.shadow-2-strong(src='/img/me.jpg' width='160' height='160')
+                                .header-bio.mt-3
+                                    div(data-aos='zoom-in' data-aos-delay='0')
+                                        h2.h1 Falence Lemungoh
+                                        p Backend Engineer
+                                    .header-social.mb-3.d-print-none(data-aos='zoom-in' data-aos-delay='200')
+                                        nav(role='navigation')
+                                            ul.nav.justify-content-center
+                                                li.nav-item
+                                                    a.nav-link(href='https://twitter.com/FalenceLemu' title='Twitter')
+                                                        i.fab.fa-twitter
+                                                        span.menu-title.sr-only Twitter
+                                                li.nav-item
+                                                    a.nav-link(href='https://web.facebook.com/falenceLemu' title='Facebook')
+                                                        i.fab.fa-facebook
+                                                        span.menu-title.sr-only Facebook
+                                                li.nav-item
+                                                    a.nav-link(href='https://www.instagram.com/falence_lemungoh/' title='Instagram')
+                                                        i.fab.fa-instagram
+                                                        span.menu-title.sr-only Instagram
+                                                li.nav-item
+                                                    a.nav-link(href='https://github.com/falence' title='Github')
+                                                        i.fab.fa-github
+                                                        span.menu-title.sr-only Github
+                                    .d-print-none
+                                        //- a.btn.btn-outline-light.btn-lg.shadow-sm.mt-1.me-3(href='material-resume.pdf' data-aos='fade-right' data-aos-delay='700') Download CV
+                                        //- a.nav__el(href='https://training.zuri.team/')
+                                        //-     img.nav__user-img(src='/img/zuri.png' alt='zuri logo')
+                                        //-     span ZURI
+                                        //- a.nav__el(href='https://hng.tech/')
+                                        //-     img.nav__user-img(src='/img/hng.png' alt='hng logo')
+                                        //-     span HNG
+                                        //- a.nav__el(href='https://ingressive.org/')
+                                        //-     img.nav__user-img(src='/img/i4g.png' alt='ingressive for good logo')
+                                        //-     span I4G   
+                                        a.btn.btn-info.btn-lg.shadow-sm.mt-1(href='#contact' data-aos='fade-left' data-aos-delay='700') Hire Me
+                                    
+                                     
+
+            #about.shadow-1-strong.bg-white.my-5.p-5
+                .about-section
+                    .row
+                        .col-md-6
+                            h2.h2.fw-light.mb-4 About Me
+                            p
+                                | Hello! I&rsquo;m Falence Lemungoh. I am passionate about web development with moderm web development methods. 
+                                p I am a skilled backend developer with specialty on the backend; microservices and APIs for frontend consumption.
+                            p
+                                | I'm also proficient in frontend development with know-how of modern frontend development methods, techniques and approaced. With added experience in design and illustrations
+                            p
+                                | I am a quick learner and a team worker that gets the job done. I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time schemas.
+                        .col-md-5.offset-lg-1
+                            .row.mt-2
+                                h2.h2.fw-light.mb-4 Bio
+                                .col-sm-5
+                                    .pb-2.fw-bolder
+                                        i.far.fa-calendar-alt.pe-2.text-muted(style='width:24px;opacity:0.85;')
+                                        |  Age
+                                .col-sm-7
+                                    .pb-2 21
+                                .col-sm-5
+                                    .pb-2.fw-bolder
+                                        i.far.fa-envelope.pe-2.text-muted(style='width:24px;opacity:0.85;')
+                                        |  Email
+                                .col-sm-7
+                                    .pb-2 falencelemungoh@gamil.com
+                                .col-sm-5
+                                    .pb-2.fw-bolder
+                                        i.fab.fa-skype.pe-2.text-muted(style='width:24px;opacity:0.85;')
+                                        |  Skype
+                                .col-sm-7
+                                    .pb-2 falence@skype.com
+                                .col-sm-5
+                                    .pb-2.fw-bolder
+                                        i.fas.fa-phone.pe-2.text-muted(style='width:24px;opacity:0.85;')
+                                        |  Phone
+                                .col-sm-7
+                                    .pb-2 +237 680 429 978
+                                .col-sm-5
+                                    .pb-2.fw-bolder
+                                        i.fas.fa-map-marker-alt.pe-2.text-muted(style='width:24px;opacity:0.85;')
+                                        |  Address
+                                .col-sm-7
+                                    .pb-2 Molyko, Buea, Cameroon
+            #skills.shadow-1-strong.bg-white.my-5.p-5
+                .skills-section
+                    h2.h2.fw-light.mb-4 Professional Skills
+                    .row
+                        .col-md-6
+                            .mb-3
+                                span.fw-bolder JavaScript
+                                .progress.my-2.rounded(style='height: 20px')
+                                    .progress-bar.bg-info(role='progressbar' data-aos='zoom-in-right' data-aos-delay='300' data-aos-anchor='.skills-section' style='width: 95%' aria-valuenow='95' aria-valuemin='0' aria-valuemax='100') Advance
+                            .mb-3
+                                span.fw-bolder Typescript
+                                .progress.my-2.rounded(style='height: 20px')
+                                    .progress-bar.bg-info(role='progressbar' data-aos='zoom-in-right' data-aos-delay='100' data-aos-anchor='.skills-section' style='width: 70%;' aria-valuenow='95' aria-valuemin='0' aria-valuemax='100') Proficient
+                            .mb-3
+                                span.fw-bolder HTML
+                                .progress.my-2.rounded(style='height: 20px')
+                                    .progress-bar.bg-info(role='progressbar' data-aos='zoom-in-right' data-aos-delay='200' data-aos-anchor='.skills-section' style='width: 90%' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100') Advance
+                            .mb-3
+                                span.fw-bolder CSS
+                                .progress.my-2.rounded(style='height: 20px')
+                                    .progress-bar.bg-info(role='progressbar' data-aos='zoom-in-right' data-aos-delay='300' data-aos-anchor='.skills-section' style='width: 80%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100') Advance
+                        .col-md-6
+                            .mb-3
+                                span.fw-bolder Node JS
+                                .progress.my-2.rounded(style='height: 20px')
+                                    .progress-bar.bg-secondary(role='progressbar' data-aos='zoom-in-right' data-aos-delay='600' data-aos-anchor='.skills-section' style='width: 95%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100') Advance
+                            .mb-3
+                                span.fw-bolder Laravel
+                                .progress.my-2.rounded(style='height: 20px')
+                                    .progress-bar.bg-secondary(role='progressbar' data-aos='zoom-in-right' data-aos-delay='400' data-aos-anchor='.skills-section' style='width: 60%' aria-valuenow='95' aria-valuemin='0' aria-valuemax='100') Proficient
+                            .mb-3
+                                span.fw-bolder React
+                                .progress.my-2.rounded(style='height: 20px')
+                                    .progress-bar.bg-secondary(role='progressbar' data-aos='zoom-in-right' data-aos-delay='400' data-aos-anchor='.skills-section' style='width: 65%' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100') Proficient
+                            .mb-3
+                                span.fw-bolder Angular
+                                .progress.my-2.rounded(style='height: 20px')
+                                    .progress-bar.bg-secondary(role='progressbar' data-aos='zoom-in-right' data-aos-delay='500' data-aos-anchor='.skills-section' style='width: 55%' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100') Proficient
+            #experience.shadow-1-strong.bg-white.my-5.p-5
+                .work-experience-section
+                    h2.h2.fw-light.mb-4 Work Experience
+                    .timeline
+                        .timeline-card.timeline-card-info(data-aos='fade-in' data-aos-delay='0')
+                            .timeline-head.px-4.pt-3
+                                .h5
+                                    | Backend Developer 
+                                    span.text-muted.h6 at Zuri Training Program, Nigeria
+                            .timeline-body.px-4.pb-4
+                                .text-muted.text-small.mb-3 March, 2021 - June 2021
+                                div
+                                    | Basic introduction to software development and design aimed at complete beginners which anyone can join.
+                                    | I enrolled in the backend development track and made it to the end, participating in the project phase.
+                        .timeline-card.timeline-card-info(data-aos='fade-in' data-aos-delay='200')
+                            .timeline-head.px-4.pt-3
+                                .h5
+                                    | Software Engineer Intern 
+                                    span.text-muted.h6 at FlexGroup Sarl, Cameroon
+                            .timeline-body.px-4.pb-4
+                                .text-muted.text-small.mb-3 August, 2020 - February, 2021
+                                div
+                                    | Built web and mobile applications for clients and company projects using the latest tools and technologies..
+                                    | Worked on the vendor back-office of an eCommerce application that allows customers and vendors to chat and negotiate prices..
+                        .timeline-card.timeline-card-info(data-aos='fade-in' data-aos-delay='400')
+                            .timeline-head.px-4.pt-3
+                                .h5
+                                    | Mobile Web Specialist 
+                                    span.text-muted.h6 at Google Africa Training
+                            .timeline-body.px-4.pb-4
+                                .text-muted.text-small.mb-3 June, 2020 - August, 2021
+                                div
+                                    | One of 30000 developers supported by the Andela Learning Community to upskill on important Google technologies.
+                                    | Enrolled in the Mobile Web Specialist track and got web development training. Learnt and built a few projects with NodeJs on the backend and Angular on the frontend.
+          
+                        .timeline-card.timeline-card-info(data-aos='fade-in' data-aos-delay='400')
+                            .timeline-head.px-4.pt-3
+                                .h5
+                                    | Final year project 
+                                    span.text-muted.h6 at University of Buea
+                            .timeline-body.px-4.pb-4
+                                .text-muted.text-small.mb-3 May, 2020 - July, 2021
+                                div
+                                    | Worked on my final year project for my B.Eng in the University of Buea Cameroon with topic: Design and implementation of a Voice Search Engine.
+                                    | I built the web application and worked on both the backend and front end.
+          
+            #education.shadow-1-strong.bg-white.my-5.p-5
+                .education-section
+                    h2.h2.fw-light.mb-4 Education
+                    .timeline
+                        .timeline-card.timeline-card-success(data-aos='fade-in' data-aos-delay='0')
+                            .timeline-head.px-4.pt-3
+                                .h5
+                                    | Bachelors in Computer Engineering 
+                                    span.text-muted.h6 from University of Buea, Cameroon
+                            .timeline-body.px-4.pb-4
+                                .text-muted.text-small.mb-3 2017 - 2021
+                                div
+                                    | Received a four-year training as a computer engineer from one of the best universities in cameroon. Studied engineering concepts and implemented reallife projects.
+                        .timeline-card.timeline-card-success(data-aos='fade-in' data-aos-delay='200')
+                            .timeline-head.px-4.pt-3
+                                .h5
+                                    | High School 
+                                    span.text-muted.h6 from Bilingual Grammar School, Buea
+                            .timeline-body.px-4.pb-4
+                                .text-muted.text-small.mb-3 2015 - 2017
+                                div
+                                    | Studied sciences at the high school.
+            #portfolio.shadow-1-strong.bg-white.my-5.p-5.d-print-none
+                .portfolio-section
+                    h2.h2.fw-light.mb-4 Portfolio
+                    .row.g-0
+                        .col-md-6
+                            a(href='https://github.com/zuri-training/gasme-be-pjt-3/tree/dev' target='_blank')
+                                img.img-fluid(src='images/lpg.jpeg' width='800' height='500')
+                        .col-md-6.d-flex.align-items-center(data-aos='fade-left' data-aos-delay='100')
+                            .m-4.mt-md-2
+                                p.text-teal.text-small Backend / JavaScript / NodeJS
+                                h3 Gas and Me - Zuri Training Project
+                                p.text-muted
+                                    | This is a proposed solution (Web and Mobile App) for LPG(Cooking Gas) retailing across Africa. The switch from other cooking means to gas is growing rapidly and the retailers are still largely separated from the final consumers in Africa. This solution would provide a meeting point for Bulk Seller, Retailers and Final Consumers. It is expected to ease and enhance the productivity of the LPG sector and business.
+
+                    .row.g-0.portfolio-reverse
+                        .col-md-6.d-flex.align-items-center(data-aos='fade-right' data-aos-delay='100')
+                            .m-4.mt-md-2.text-end
+                                p.text-teal.text-small Backend / JavaScript / NodeJS
+                                h3 Natours
+                                p.text-muted
+                                    | A online tours platform that booking of tours. Following a NodesJs course by Jonas Schmedtmann, I built and implement API on the backend for this application. Features from user authentication, email handling, image processing, rendering maps, stripe payment etc
+                        .col-md-6
+                            a(href='https://github.com/Falence/natours' target='_blank')
+                                img.img-fluid(src='images/natours.jpg' width='800' height='500')
+
+                    .row.g-0
+                        .col-md-6
+                            a(href='https://falence.github.io/' target='_blank')
+                                img.img-fluid(src='images/notes.png' width='800' height='500')
+                        .col-md-6.d-flex.align-items-center(data-aos='fade-left' data-aos-delay='100')
+                            .m-4.mt-md-2
+                                p.text-teal.text-small Frontend / HTML / CSS / JavaScript
+                                h3 Text - Speech Note Taker App
+                                p.text-muted
+                                    | Built an application that converts text to speech and saves as notes and vice versa.
+
+                    .row.g-0.portfolio-reverse
+                        .col-md-6.d-flex.align-items-center(data-aos='fade-right' data-aos-delay='100')
+                            .m-4.mt-md-2.text-end
+                                p.text-teal.text-small Backend / JavaScript / NodeJS / ElasticSearch
+                                h3 Voice Search Engine
+                                p.text-muted
+                                    | Backend for a voice search engine for an online news agency where news reader search for news articles by voice query.
+                        .col-md-6
+                            a(href='https://github.com/Falence/backend-finalYearProject' target='_blank')
+                                img.img-fluid(src='images/huff-api.png' width='800' height='500')
+
+
+                    .row.g-0
+                        .col-md-6
+                            a(href='https://github.com/Falence/questionnaire-app/' target='_blank')
+                                img.img-fluid(src='images/questionnaire.png' width='800' height='500')
+                        .col-md-6.d-flex.align-items-center(data-aos='fade-left' data-aos-delay='100')
+                            .m-4.mt-md-2
+                                p.text-teal.text-small Backend / Laravel / Blade Templates
+                                h3 Questionnaire App
+                                p.text-muted
+                                    | Permits users create questionnaires and then do a survey. This questionnaires can then be shared out to people who would then answer the questionnaires.
+
+                    .row.g-0.portfolio-reverse
+                        .col-md-6.d-flex.align-items-center(data-aos='fade-right' data-aos-delay='100')
+                            .m-4.mt-md-2.text-end
+                                p.text-teal.text-small Backend / JavaScript / NodeJS / 
+                                h3 User Authentication API
+                                p.text-muted
+                                    | I built a backend user authentication APIs that anyone can use in their projects.
+                        .col-md-6
+                            a(href='https://github.com/Falence/user-authentication-nodejs' target='_blank')
+                                img.img-fluid(src='images/auth.jfif' width='800' height='500')
+
+            #contact.shadow-1-strong.bg-white.my-5.p-5
+                .contant-section
+                    h2.h2.fw-light.text.mb-4 Contact
+                    .row.mb-4
+                        .col-md-5(data-aos='fade-left' data-aos-delay='200')
+                            .mt-1
+                                .h6
+                                    i.fas.fa-phone.pe-2.text-muted(style='width:24px;opacity:0.85;')
+                                    |  +237 680 429 978
+                                .h6
+                                    i.far.fa-envelope.pe-2.text-muted(style='width:24px;opacity:0.85;')
+                                    |  falencelemungoh@gmail.com
+                            .mt-5.d-print-none
+                                form.form
+                                    .form-outline.mb-4
+                                        input#name.form-control(type='text' required='')
+                                        label.form-label(for='name') Name
+                                    .form-outline.mb-4
+                                        input#email.form-control(type='email' required='')
+                                        label.form-label(for='email') Email address
+                                    .form-outline.mb-4
+                                        textarea#message.form-control(style='resize: none;' rows='4' required='')
+                                        label.form-label(for='message') Message
+                                    button.btn.btn-info.btn-block.mb-4(type='submit') Send
+                        .col-md-7.d-print-none(data-aos='zoom-in' data-aos-delay='100')
+                            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.9728369114487!2d9.28135196451185!3d4.159612828260739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106131f579928cdd%3A0xd1d5bf13f227ae84!2sMolyko%20Omnisport%20Stadium!5e0!3m2!1sen!2scm!4v1629619818853!5m2!1sen!2scm' width='500' height='400' style='border:0;width:100%;' allowfullscreen='' loading='lazy')
+footer.pt-4.pb-4.text-muted.text-center.d-print-none
+    .container
+        a.nav__el(href='https://training.zuri.team/')
+            img.nav__user-img(src='/img/zuri.png' alt='zuri logo')
+        a.nav__el(href='https://hng.tech/')
+            img.nav__user-img(src='/img/hng.png' alt='hng logo')
+        a.nav__el(href='https://ingressive.org/')
+            img.nav__user-img(src='/img/i4g.png' alt='ingressive for good logo')
+        
+        .my-3
+            
+            .h4 Falence Lemungoh
+            .footer-nav
+                nav(role='navigation')
+                    ul.nav.justify-content-center
+                        li.nav-item
+                            a.nav-link(href='https://twitter.com/FalenceLemu' title='Twitter')
+                                i.fab.fa-twitter
+                                span.menu-title.sr-only Twitter
+                        li.nav-item
+                            a.nav-link(href='https://www.facebook.com/falenceLemu' title='Facebook')
+                                i.fab.fa-facebook
+                                span.menu-title.sr-only Facebook
+                        li.nav-item
+                            a.nav-link(href='https://www.instagram.com/falence_lemungoh/' title='Instagram')
+                                i.fab.fa-instagram
+                                span.menu-title.sr-only Instagram
+                        li.nav-item
+                            a.nav-link(href='https://github.com/falence' title='Github')
+                                i.fab.fa-github
+                                span.menu-title.sr-only Github
+        .text-small
+            .mb-1 &copy; Falence Lemungoh. All rights reserved.
+script(src='/scripts/mdb.min.js?ver=1.2.1')
+script(src='/scripts/aos.js?ver=1.2.1')
+script(src='/scripts/main.js?ver=1.2.1')
+script(src='/js/bundle.js')

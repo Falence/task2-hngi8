@@ -4,7 +4,7 @@ import '@babel/polyfill'
 import axios from 'axios'
 import { showAlert } from './alerts'
 
-const login = async (name, email, message) => {
+const submit = async (name, email, message) => {
   try {
     const res = await axios({
         method: 'POST',
@@ -27,15 +27,15 @@ const login = async (name, email, message) => {
   }
 }
 
-const loginForm = document.querySelector('.form')
+const submitForm = document.querySelector('.form')
 
-if (loginForm)
-    loginForm.addEventListener('submit', e => {
+if (submitForm)
+  submitForm.addEventListener('submit', e => {
         e.preventDefault()
         const name = document.getElementById('name').value
         const email = document.getElementById('email').value
-        const message = document.getElementById('textarea').value
+        const message = document.getElementById('message').value
         // console.log({name, email, message})
-        login(name, email, message)
+        submit(name, email, message)
     })
 
